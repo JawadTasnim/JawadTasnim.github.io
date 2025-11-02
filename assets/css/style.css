@@ -484,3 +484,42 @@ body.dark-mode .btn-outline-primary:hover {
   background-color: #9ec5ff;
   color: #111;
 }
+
+/* ========== Mobile Responsive Fixes ========== */
+@media (max-width: 768px) {
+  /* Fix email overflow on mobile */
+  .contact-block .item {
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .contact-block .item i {
+    flex-shrink: 0;
+  }
+  
+  .contact-block a {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    flex: 1;
+    min-width: 0;
+  }
+  
+  /* Stack columns on mobile */
+  .col-md-4, .col-md-8 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  /* Ensure proper spacing on mobile */
+  .col-md-4.order-md-2 {
+    margin-bottom: 2rem;
+  }
+  
+  /* Make avatar smaller on mobile */
+  .avatar-crop {
+    max-width: 240px;
+    height: 200px;
+  }
+}
