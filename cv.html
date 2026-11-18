@@ -71,19 +71,27 @@
           <h1 class="post-title">CV</h1>
         </header>
 
-        <p class="mb-4">
-          <a class="btn btn-outline-primary" href="assets/cv/resumeLatest.pdf" download>
-            <i class="fa-solid fa-download"></i> Download CV (PDF)
+        <!-- F5: two tracks, two downloads -->
+        <p class="mb-2">
+          <a class="btn btn-outline-primary" href="assets/cv/Jawad_CV_Academic.pdf" download>
+            <i class="fa-solid fa-download"></i> Academic CV (PDF)
           </a>
+          <a class="btn btn-outline-primary ml-2" href="assets/cv/Jawad_Resume_Industry.pdf" download>
+            <i class="fa-solid fa-download"></i> Industry Résumé (1 page, PDF)
+          </a>
+        </p>
+        <p class="text-muted mb-4" style="font-size:0.9rem;">
+          The academic CV carries the full publication record; the industry résumé is a
+          one-page summary focused on LLM/VLM security and systems work.
         </p>
 
         <!-- PDF Preview -->
         <div class="pdf-preview-container">
-          <iframe src="assets/cv/resumeLatest.pdf#toolbar=0" title="CV Preview"></iframe>
+          <iframe src="assets/cv/Jawad_CV_Academic.pdf#toolbar=0" title="Academic CV Preview"></iframe>
           <!-- Fallback for browsers that don't support PDF preview -->
           <div class="pdf-fallback" style="display:none;">
             <p>Your browser doesn't support PDF preview.</p>
-            <a class="btn btn-outline-primary" href="assets/cv/resumeLatest.pdf" download>
+            <a class="btn btn-outline-primary" href="assets/cv/Jawad_CV_Academic.pdf" download>
               <i class="fa-solid fa-download"></i> Download CV instead
             </a>
           </div>
@@ -91,8 +99,99 @@
 
         <hr style="margin: 3rem 0; border-color: #e9ecef;">
 
+        <!-- Education -->
+        <section class="mb-5">
+          <h3 class="section-title">Education</h3>
+
+          <div class="cv-entry mb-4">
+            <div class="cv-header">
+              <div class="cv-title-line">
+                <strong>Ph.D.</strong>
+                <span class="cv-date">August 2024 - Present</span>
+              </div>
+              <div class="cv-subtitle">Florida International University (FIU) | Miami, FL</div>
+            </div>
+            <div class="cv-details">
+              <div>Major: Computer Science, CGPA: 4.00/4.00</div>
+              <div>Research Interest: LLM/VLM privacy and security, parameter-efficient fine-tuning, ML/DL optimization, computer vision</div>
+              <div><em>Major Professor:</em> <a href="https://yanzhaowu.me/" target="_blank" rel="noopener">Dr. Yanzhao Wu</a></div>
+            </div>
+          </div>
+
+          <div class="cv-entry mb-4">
+            <div class="cv-header">
+              <div class="cv-title-line">
+                <strong>B.Sc.</strong>
+                <span class="cv-date">January 2018 - March 2023</span>
+              </div>
+              <div class="cv-subtitle">Khulna University of Engineering and Technology | Khulna, Bangladesh</div>
+            </div>
+            <div class="cv-details">
+              <div>Major: Electrical and Electronic Engineering, CGPA: 3.24/4.00</div>
+              <div>Thesis: GSNet: A Multi-class 3D Attention-based Hybrid Glioma Segmentation Network</div>
+            </div>
+          </div>
+        </section>
 
 
+        <!-- F2: Research Experience -->
+        <section class="mb-5">
+          <h3 class="section-title">Research Experience</h3>
+
+          <div class="cv-entry mb-4">
+            <div class="cv-header">
+              <div class="cv-title-line">
+                <strong>Research Assistant (RA)</strong>
+                <span class="cv-date">January 2026 – Present</span>
+              </div>
+              <div class="cv-subtitle">
+                Florida International University (FIU) | Miami, FL
+              </div>
+            </div>
+            <div class="cv-details">
+              <div><em>Advisor:</em> <a href="https://yanzhaowu.me/" target="_blank" rel="noopener">Dr. Yanzhao Wu</a></div>
+              <ul class="cv-list mt-2">
+                <li>Research on privacy and security of large language and vision-language
+                    models: training-data leakage, membership inference, and jailbreak robustness.</li>
+                <li>Designed HT-MIA, a membership inference attack exploiting low-confidence
+                    tokens, outperforming seven state-of-the-art baselines.</li>
+                <li>Contribute to LLM-driven data labeling for intrusion detection
+                    (NSF CICI/RSSD); results pending publication.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="cv-entry mb-4">
+            <div class="cv-header">
+              <div class="cv-title-line">
+                <strong>Graduate Assistant (GA)</strong>
+                <span class="cv-date">August 2024 – April 2025</span>
+              </div>
+              <div class="cv-subtitle">
+                Florida International University (FIU) | Miami, FL
+              </div>
+            </div>
+          </div>
+
+          <div class="cv-entry mb-4">
+            <div class="cv-header">
+              <div class="cv-title-line">
+                <strong>Research Assistant</strong>
+                <span class="cv-date">2021 – 2023</span>
+              </div>
+              <div class="cv-subtitle">
+                Khulna University of Engineering and Technology | Khulna, Bangladesh
+              </div>
+            </div>
+            <div class="cv-details">
+              <div><em>Advisor:</em> Prof. Md. Kamrul Hasan</div>
+              <ul class="cv-list mt-2">
+                <li>Medical imaging and applied machine learning; contributed to seven
+                    peer-reviewed publications.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
         <!-- Teaching Experience -->
         <section class="mb-5">
@@ -126,52 +225,68 @@
 
 
         
-        <!-- Education -->
+        <!-- F4: Funded Research. Awards are held by the PI, not by me - stated
+             explicitly, and award amounts are deliberately not listed. -->
         <section class="mb-5">
-          <h3 class="section-title">Education</h3>
-          
+          <h3 class="section-title">Funded Research</h3>
+          <p class="text-muted" style="font-size:0.9rem;">
+            Role on all listed projects: Graduate Research Assistant. Awards are held by the PI.
+          </p>
+
           <div class="cv-entry mb-4">
             <div class="cv-header">
               <div class="cv-title-line">
-                <strong>Ph.D.</strong>
-                <span class="cv-date">August 2024 - Present</span>
+                <strong>CICI: RSSD: LLMDaL: LLM-Driven Data Labeling for Training ML Models</strong>
+                <span class="cv-date">01/2026 – 12/2028</span>
               </div>
-              <div class="cv-subtitle">Florida International University (FIU) | Miami, FL</div>
-            </div>
-            <div class="cv-details">
-              <div>Major: Computer Science, CGPA: 4.00/4.00</div>
-              <div>Research Interest: LLM, Parameter Efficient Fine-tuning, AI Security, Computer Vision, ML/DL Optimization</div>
+              <div class="cv-subtitle">National Science Foundation (NSF) / Virginia Commonwealth University (in progress)</div>
             </div>
           </div>
 
           <div class="cv-entry mb-4">
             <div class="cv-header">
               <div class="cv-title-line">
-                <strong>B.Sc.</strong>
-                <span class="cv-date">January 2018 - March 2023</span>
+                <strong>Privacy-Preserving Large Language Models: Mitigating Membership Inference Attacks in Healthcare</strong>
+                <span class="cv-date">09/2025 – 08/2026</span>
               </div>
-              <div class="cv-subtitle">Khulna University of Engineering and Technology | Khulna, Bangladesh</div>
+              <div class="cv-subtitle">CAHSI &amp; Google Institutional Research Program (in progress)</div>
             </div>
-            <div class="cv-details">
-              <div>Major: Electrical and Electronic Engineering, CGPA: 3.24/4.00</div>
-              <div>Thesis: GSNet: A Multi-class 3D Attention-based Hybrid Glioma Segmentation Network</div>
+          </div>
+
+          <div class="cv-entry mb-4">
+            <div class="cv-header">
+              <div class="cv-title-line">
+                <strong>Towards Efficient Fine-tuning of Large Language Models</strong>
+                <span class="cv-date">11/2024 – 02/2026</span>
+              </div>
+              <div class="cv-subtitle">NAIRR Pilot, OpenAI, Amazon Web Services (completed)</div>
             </div>
           </div>
         </section>
 
-        
-        <!-- Skills -->
+        <!-- F4: Service -->
+        <section class="mb-5">
+          <h3 class="section-title">Service</h3>
+          <ul class="cv-list">
+            <li>Reviewer, International Conference on Learning Representations (ICLR), 2026.</li>
+            <li>External reviewer, IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025.</li>
+            <li>External reviewer, The Web Conference (WWW), 2025.</li>
+          </ul>
+        </section>
+
+        <!-- F3: Skills, tiered -->
         <section class="mb-5">
           <h3 class="section-title">Skills</h3>
+          <!-- Each line answers one question: what fields, what can I do, what do I use. -->
           <div class="cv-skills">
             <div class="skill-item mb-3">
-              <strong>Programming Languages:</strong> Proficient in Python (primary language), with experience in C and C++. Working knowledge of SQL, HTML, CSS, and JavaScript.
+              <strong>Research areas:</strong> LLM/VLM privacy and security, training-data leakage, jailbreak robustness, parameter-efficient fine-tuning, evaluation and benchmark design, computer vision, medical image segmentation, ML/DL optimization
             </div>
             <div class="skill-item mb-3">
-              <strong>Frameworks and Libraries:</strong> Expertise in Hugging Face Transformers and PyTorch, with extensive hands-on experience in tools and libraries for deep learning, machine learning, computer vision, data preprocessing, and model evaluation.
+              <strong>Techniques:</strong> membership inference, red-teaming, differentially private training, LoRA/QLoRA, quantization, learning-rate policy design, multi-GPU training, ensemble learning, 3D volumetric segmentation, class rebalancing
             </div>
             <div class="skill-item mb-3">
-              <strong>Productivity Tools:</strong> MS Excel, Word, PowerPoint.
+              <strong>Stack:</strong> PyTorch, Hugging Face (Transformers, PEFT, TRL), DeepSpeed, FSDP, Accelerate, vLLM, lm-eval-harness, Python, C++, Ollama, scikit-learn, XGBoost, OpenCV, NumPy, pandas, Linux, Docker, Git, LaTeX
             </div>
           </div>
         </section>
